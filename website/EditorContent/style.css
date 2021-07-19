@@ -1,0 +1,88 @@
+.ProseMirror .title.ProseMirror-emptynode::before {
+  content: "Untitled";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror h1.ProseMirror-emptynode::before {
+  content: "Heading 1";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror h2.ProseMirror-emptynode::before {
+  content: "Heading 2";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror h3.ProseMirror-emptynode::before {
+  content: "Heading 3";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror h4.ProseMirror-emptynode::before {
+  content: "Heading 4";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror h5.ProseMirror-emptynode::before {
+  content: "Heading 5";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror h6.ProseMirror-emptynode::before {
+  content: "Heading 6";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror p.ProseMirror-emptynode::before {
+  content: "paragraph";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror blockquote .ProseMirror.emptynode::before {
+  content: "blockquote";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror ul {
+  list-style-type: disc;
+}
+
+.ProseMirror ul > li > p.ProseMirror-emptynode::before {
+  content: "item";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror ol > li > p.ProseMirror-emptynode::before {
+  content: "enum";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror .todo-item p.ProseMirror-emptynode::before {
+  content: "todo";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+

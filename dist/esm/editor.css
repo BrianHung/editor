@@ -1,0 +1,2 @@
+@import "prosemirror-view/style/prosemirror.css"; /* required by prosemirror-view */
+@import "prosemirror-gapcursor/style/gapcursor.css" /* required by prosemirror-gapcursor */

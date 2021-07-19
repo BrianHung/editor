@@ -1,0 +1,1 @@
+If an extension can be a self-contained ProseMirror plugin, it should be placed instead in the `/plugins` folder.

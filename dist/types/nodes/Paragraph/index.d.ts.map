@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../src/nodes/Paragraph/index.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAkB,QAAQ,EAAE,MAAM,mBAAmB,CAAC;AAClE,OAAO,IAAI,MAAM,SAAS,CAAC;AAE3B,MAAM,CAAC,OAAO,OAAO,SAAU,SAAQ,IAAI;IAEzC,IAAI,IAAI,WAEP;IAED,IAAI,MAAM,IAAI,QAAQ,CAOrB;IAED,IAAI,CAAC,EAAC,QAAQ,EAAC;;KAAA;;;IAMf,QAAQ,CAAC,EAAC,QAAQ,EAAC;;KAAA;CAGpB"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"FocusMode.d.ts","sourceRoot":"","sources":["../../../src/plugins/FocusMode.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,WAAW,EAAe,MAAM,mBAAmB,CAAC;AAClE,OAAO,EAAE,MAAM,EAAE,SAAS,EAAE,MAAM,mBAAmB,CAAA;AAErD,eAAO,MAAM,YAAY,qBAA6B,CAAC;AAEvD,wBAAgB,SAAS,qBAiBxB;AAED,eAAe,SAAS,CAAC;AAEzB,wBAAgB,eAAe,CAAC,KAAK,EAAE,WAAW,EAAE,QAAQ,KAAA,WAG3D"}

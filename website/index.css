@@ -1,0 +1,31 @@
+@import url('https://rsms.me/inter/inter.css');
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+.editor {
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor-content {
+  position: relative;
+}
