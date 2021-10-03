@@ -1,0 +1,29 @@
+.ProseMirror .codeblock {
+  font-family: "Fira Code", monospace;
+  font-size: 0.8em;
+  line-height: 1.5;
+  margin: 0.5em 0;
+  background: var(--default-back);
+  padding: 1.0em;
+}
+
+.codeblock.ProseMirror-emptynode code::before {
+  content: "codeblock";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.codeblock .cm-linenumber.ProseMirror-widget {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-left: -0.5em;
+  color: #999;
+  user-select: none;
+  text-align: right;
+  width: 20px;
+}
+
+.ProseMirror .codeblock {
+  position: relative;
+}

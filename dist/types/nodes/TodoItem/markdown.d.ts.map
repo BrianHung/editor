@@ -1,0 +1,1 @@
+{"version":3,"file":"markdown.d.ts","sourceRoot":"","sources":["../../../../src/nodes/TodoItem/markdown.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,uBAAuB,EAAE,MAAM,sBAAsB,CAAC;AAC/D,OAAO,KAAK,EAAE,IAAI,IAAI,MAAM,EAAE,MAAM,mBAAmB,CAAC;AACxD,OAAO,KAAK,MAAM,uBAAuB,CAAA;AAEzC,eAAO,MAAM,UAAU,UAAW,uBAAuB,QAAQ,MAAM,SAGtE,CAAA;AAED,eAAO,MAAM,YAAY;;oBAGL,KAAK;;;CAExB,CAAA"}

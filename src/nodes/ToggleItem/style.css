@@ -1,0 +1,123 @@
+.ProseMirror li.toggle-item .toggle-checkbox {
+  --border: 000, 000, 000;
+  --box-fill: 1.5px;
+  --box-color: var(--border);
+  background-color: rgba(var(--border), 0.00);
+  transition: transform 0.2s ease-in;
+}
+
+.ProseMirror li.toggle-item .toggle-checkbox:hover {
+  background-color: rgba(var(--border), 0.05);
+}
+
+.ProseMirror li.toggle-item > .toggle-checkbox::before {
+  content: "▶";
+  color: black;
+  width: calc(1.25em);
+  height: calc(1.25em);
+  border-radius: 2px;
+  transform: rotate(00deg);
+  transition: transform 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProseMirror li.toggle-item[data-content="false"] > .toggle-checkbox::before {
+  content: "▻";
+}
+
+.ProseMirror li.toggle-item .toggle-checkbox:hover:before {
+}
+
+.ProseMirror li.toggle-item[data-toggled="true"] > .toggle-checkbox  {
+  --box-fill: 12px;
+  --box-color: 255, 255, 255;
+}
+
+
+.toggle-checkbox {
+  width: calc(1.25em);
+  height: calc(1.25em);
+  appearance: none;
+  outline: none;
+  background: transparent;
+  border: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: box-shadow .3s;
+  box-shadow: 0 0 0 var(--box-fill, 1px) rgb(var(transparent, --default-font)) inset;
+}
+
+.ProseMirror ul.toggle-list {
+  padding-left: 0;
+}
+
+.ProseMirror li.toggle-item {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em 0;
+}
+
+.ProseMirror li.toggle-item .toggle-checkbox {
+  flex-shrink: 0;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+.ProseMirror li.toggle-item[data-toggled="true"] > .toggle-checkbox::before {
+  transform: rotate(90deg);
+}
+
+.ProseMirror .toggle-content {
+  transition: color 0.3s ease-in;
+}
+
+.ProseMirror .toggle-content > p {
+  margin-block-start: 0;
+}
+
+.toggle-content {
+  flex: 1;
+  width: 100%;
+  overflow: auto;
+}
+
+.toggle-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+li .toggle-content p {
+  transition: color 0.3s ease-in;
+}
+
+.ProseMirror ul {
+  padding-inline-start: 1.5rem;
+}
+
+.ProseMirror ol {
+  padding-inline-start: 1.5rem;
+}
+
+.ProseMirror ul.toggle-list .toggle-checkbox {
+  margin-right: 0.25rem;
+}
+
+.ProseMirror li.toggle-item[data-toggled=false] .toggle-content>:first-child {
+  margin-bottom: 0;
+}
+
+.ProseMirror li.toggle-item[data-toggled=false] .toggle-content>:not(:first-child) {
+  display: none;
+}
+
+.ProseMirror ul.toggle-list p.ProseMirror-emptynode::before {
+  content: "toggle";
+  float: left;
+  pointer-events: none;
+  height: 0;
+}

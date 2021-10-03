@@ -1,0 +1,7 @@
+.emoji { /* https://github.com/twitter/twemoji#inline-styles */
+  display: inline !important;
+  height: 1em !important;
+  width: 1em !important;
+	margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+}

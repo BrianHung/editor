@@ -1,0 +1,235 @@
+.ProseMirror {
+  height: fit-content;
+  outline: none;
+  line-height: 1.25;
+  margin: auto;
+}
+
+.ProseMirror > * {
+  width: 760px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ProseMirror img {
+  display: block;
+  margin: 2rem auto;
+}
+
+.editor-content {
+  width: 100%;
+}
+
+.ProseMirror .mathblock {
+  background-color: rgb(247, 246, 243);
+  border-radius: 6px;
+}
+
+.ProseMirror .katex-render {
+  padding: 1rem;
+  padding-bottom: 1em;
+}
+
+.ProseMirror .katex-render .katex-display {
+  user-select: none;
+  margin: 0;
+}
+
+.ProseMirror .katex-editor {
+  padding: 1rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.ProseMirror blockquote {
+  margin: 1em 0;
+  padding: 0.1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid rgb(55, 53, 47);;
+}
+
+.ProseMirror-selectednode {
+  background-color: rgba(136, 204, 255, 0.25);
+}
+
+*::selection {
+  background: rgba(45, 170, 219, 0.20);
+}
+
+.ProseMirror {
+  --default-gray: #e1e1e0;
+  --default-back: #f8f8f8;
+}
+
+.ProseMirror .codeblock::before {
+  content: attr(data-lang);
+  display: block;
+  font-size: 0.75em;
+}
+
+.ProseMirror .codeblock {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  background-color: rgb(246, 248, 250);
+  margin: 1rem auto;
+  padding: 16px;
+  overflow: auto;
+  font-size: 0.85em;
+  line-height: 1.45;
+  border-radius: 6px;
+}
+
+:root {
+
+  --lite-cyan: #56b6c2;
+  --lite-blue: #4078f2;
+  --lite-purp: #a626a4;
+  --lite-gren: #50a14f;
+  --lite-lred: #e45649;
+  --lite-dred: #ca1243;
+  --lite-lorg: #986801;
+  --lite-dorg: #c18401;
+
+  --dark-cyan: #56b6c2;
+  --dark-blue: #61afef;
+  --dark-purp: #c678dd;
+  --dark-gren: #98c379;
+  --dark-lred: #e06c75;
+  --dark-dred: #be5046;
+  --dark-lorg: #d19a66;
+  --dark-dorg: #e5c07b;
+
+  --default-cyan: var(--lite-cyan);
+  --default-blue: var(--lite-blue);
+  --default-purp: var(--lite-purp);
+  --default-gren: var(--lite-gren);
+  --default-lred: var(--lite-lred);
+  --default-dred: var(--lite-dred);
+  --default-lorg: var(--lite-lorg);
+  --default-dorg: var(--lite-dorg);
+}
+
+@media(prefers-color-scheme:dark) {
+  :root {
+    --default-cyan: var(--dark-cyan);
+    --default-blue: var(--dark-blue);
+    --default-purp: var(--dark-purp);
+    --default-gren: var(--dark-gren);
+    --default-lred: var(--dark-lred);
+    --default-dred: var(--dark-dred);
+    --default-lorg: var(--dark-lorg);
+    --default-dorg: var(--dark-dorg);
+  }
+}
+
+.ProseMirror figure {
+  width: 100%;
+  margin: 0;
+}
+
+.ProseMirror img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ProseMirror a.tag {
+  border-radius: 0.25rem;
+  padding: 0.2em 0.4em;
+  background-color: rgba(186, 230, 253, 0.50);
+  color: #06c;
+  text-decoration: none;
+}
+
+.ProseMirror a.tag:hover {
+  text-decoration: underline;
+}
+
+.ProseMirror p code {
+  border-radius: 0.25rem;  
+  padding: 0.2em 0.4em;
+  background-color:#E5E5E5;
+	font-size: 1rem;
+  line-height: 1;
+}
+
+.ProseMirror a {
+  color: #06c;
+}
+
+.ProseMirror a:visited {
+  color: #06c;
+}
+
+.ProseMirror-image-toolbar {
+  position: absolute;
+  z-index: 10;
+  width: fit-content;
+  left: 0px; right: 0px; margin: auto; /* horizontally center toolbar */
+  transform: translateY(50%);
+}
+
+.ProseMirror a.embed {
+  display: block;
+  background-color: rgb(246, 248, 250);
+  margin: 1rem auto;
+  padding: 16px;
+  overflow: auto;
+  font-size: 0.85em;
+  line-height: 1.45;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.ProseMirror a.embed:before {
+  content: '↗';
+  margin-right: 0.50rem;
+}
+
+.ProseMirror a.embed.ProseMirror-selectednode {
+  background-color: rgba(136, 204, 255, 0.25);
+}
+
+.ProseMirror .mathblock {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProseMirror .mathblock .katex-render {
+  display: contents;
+}
+
+.ProseMirror .mathblock .katex-render .katex-display {
+  padding: 1rem;
+}
+
+.ProseMirror .mathblock .katex-render.katex-error {
+  display: block;
+  padding: 1rem;
+  color: red;
+}
+
+.ProseMirror-dropcursor {
+  transition: top 75ms ease-in, bottom 75ms ease-in;
+}
+
+
+.ProseMirror .ProseMirror-image-nodeview {
+  position: relative;
+}
+
+.ProseMirror .ProseMirror-image-nodeview > button:first-child {
+  position: absolute;
+  top: 0.50rem;
+  right: 0.50rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0;
+  background-color: rgb(000, 000, 000, 0.375);
+}
+
+.ProseMirror .ProseMirror-image-nodeview .ProseMirror-image-toolbar {
+  bottom: 0;
+}

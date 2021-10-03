@@ -1,0 +1,1 @@
+{"version":3,"file":"Punctuation.d.ts","sourceRoot":"","sources":["../../../src/extensions/Punctuation.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,iBAAiB,CAAA;AAC3C,OAAO,EAAE,SAAS,EAAE,MAAM,wBAAwB,CAAA;AAGlD,eAAO,MAAM,SAAS,gBAA4B,CAAA;AAClD,eAAO,MAAM,UAAU,gBAA4B,CAAA;AACnD,eAAO,MAAM,aAAa,gBAA4B,CAAA;AACtD,eAAO,MAAM,cAAc,gBAA4B,CAAA;AAEvD,eAAO,MAAM,WAAW,8BAetB,CAAA"}

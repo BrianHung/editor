@@ -1,0 +1,87 @@
+.ProseMirror math .math-content {
+  color: #8e9297;
+}
+
+.ProseMirror .Math {
+  display: contents;
+}
+
+.ProseMirror .Math .katex-editor {
+  display: inline;
+}
+
+.ProseMirror .Math .katex-render .katex {
+  font-size: 1em;
+}
+
+.ProseMirror .Math .katex-render .katex-error {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+}
+
+
+
+.ProseMirror .math.math-error {
+  color: red;
+}
+
+
+.ProseMirror :not(.ProseMirror-activenode) math .ProseMirror-widget {
+  display: inline;
+}
+.ProseMirror .ProseMirror-activenode math .ProseMirror-widget {
+  display: inline;
+}
+
+.ProseMirror :not(.ProseMirror-activenode) math .math-content {
+  display: none;
+}
+
+.ProseMirror .ProseMirror-activenode math .math-content {
+  display: inline;
+}
+
+
+.ProseMirror p {
+  margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.ProseMirror .katex {
+  font-size: 1em;
+}
+
+.Math .hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.Math .active {
+  position: static;
+
+  width: auto;
+  height: auto;
+  margin: 0;
+
+  clip: auto;
+  overflow: visible;
+}
+
+
+.ProseMirror math .katex {
+  font: normal 1.0em "KaTeX_Main", "Times New Roman", serif;
+  line-height: 0.99;
+  text-indent: 0;
+  text-rendering: auto;
+}
