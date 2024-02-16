@@ -1,0 +1,90 @@
+.editor-command-menu {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  min-width: 310px;
+  max-height: 40vh;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  text-rendering: optimizeLegibility;
+  background-color: white;
+  overflow: auto;
+  z-index: 1;
+}
+
+.editor-command-menu .menu-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  transition: background-color 120ms ease-in 0s;
+}
+
+.editor-command-menu .menu-item:not(.menu-item-empty):hover {
+  background-color: rgba(45, 170, 219, 0.15);
+}
+
+.editor-command-menu .menu-item:not(.menu-item-empty):active,
+.editor-command-menu .menu-item.menu-item-active {
+  background-color: rgba(45, 170, 219, 0.2);
+}
+
+.editor-command-menu .menu-item.menu-item-active:hover {
+  background-color: rgba(45, 170, 219, 0.3);
+}
+
+.editor-command-menu .menu-group-title {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  user-select: none;
+  padding: 0.5em 0.9375em;
+}
+
+.editor-command-menu .menu-item-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.75em;
+  user-select: none;
+}
+
+.editor-command-menu .menu-item-name {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.editor-command-menu .menu-item-info {
+  font-size: 0.8em;
+}
+
+.editor-command-menu .menu-item-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2.2em;
+  height: 2.2em;
+  border: 1px solid #e1e1e0;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.editor-command-menu .menu-item-icon svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.editor-command-menu {
+  outline: none;
+  padding: 0;
+  font-size: 0.9em;
+  border-radius: 3px;
+  box-shadow: 0px 00px 01px rgba(15, 15, 15, 0.05),
+    0px 03px 06px rgba(15, 15, 15, 0.1), 0px 12px 24px rgba(15, 15, 15, 0.2);
+}
+
+.tippy-box[data-theme="@editor-command-menu"] .tippy-content {
+  padding: 0;
+}

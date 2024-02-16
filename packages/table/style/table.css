@@ -1,0 +1,44 @@
+.ProseMirror .tableWrapper {
+  overflow-x: auto;
+}
+.ProseMirror table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.ProseMirror td,
+.ProseMirror th {
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.25rem;
+}
+
+.ProseMirror .ProseMirror-column-resize-handle {
+  position: absolute;
+  right: -1.5px;
+  top: -1px;
+  bottom: 0;
+  width: 3px;
+  height: calc(100% + 2px);
+  z-index: 20;
+  background-color: rgb(116, 182, 219);
+  pointer-events: none;
+}
+.ProseMirror.ProseMirror-resize-cursor {
+  cursor: ew-resize;
+  cursor: col-resize;
+}
+
+.ProseMirror table td.ProseMirror-selectednode,
+.ProseMirror table th.ProseMirror-selectednode {
+  border: 1px solid #e5e5e5;
+  outline: 0;
+  background-color: initial;
+}
+
+.ProseMirror table th,
+.ProseMirror table th.ProseMirror-selectednode {
+  background-color: #f5f5f5;
+}

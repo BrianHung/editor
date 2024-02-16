@@ -1,0 +1,52 @@
+{
+	"name": "@brianhung/editor",
+	"description": "a rich text editor built upon ProseMirror",
+	"version": "0.0.0",
+	"homepage": "https://github.com/brianhung/editor/blob/main/packages/core",
+	"keywords": [
+		"prosemirror",
+		"rich text editor"
+	],
+	"license": "MIT",
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		},
+		"./style/core.css": "./style/core.css"
+	},
+	"sideEffects": [
+		"./style/core.css"
+	],
+	"style": "style/core.css",
+	"files": [
+		"src",
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brianhung/editor",
+		"directory": "packages/core"
+	},
+	"dependencies": {
+		"prosemirror-commands": "latest",
+		"prosemirror-history": "latest",
+		"prosemirror-inputrules": "latest",
+		"prosemirror-keymap": "latest",
+		"prosemirror-model": "latest",
+		"prosemirror-schema-list": "latest",
+		"prosemirror-state": "latest",
+		"prosemirror-transform": "latest",
+		"prosemirror-view": "latest",
+		"prosemirror-gapcursor": "latest",
+		"prosemirror-dropcursor": "latest",
+		"prosemirror-markdown": "latest"
+	},
+	"scripts": {
+		"clean": "rm -rf dist",
+		"build": "npm run clean && rollup -c ../../rollup.config.js"
+	}
+}

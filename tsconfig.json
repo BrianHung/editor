@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "es2019",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "react",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"sourceMap": true,
+		"baseUrl": ".",
+		"rootDir": ".",
+		"allowJs": true,
+		"checkJs": false,
+		"paths": {
+			"@brianhung/editor": ["packages/core/src"],
+			"@brianhung/editor-*": ["packages/*/src"]
+		},
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+	},
+	"exclude": ["**/node_modules", "**/dist"]
+}

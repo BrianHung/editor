@@ -1,0 +1,35 @@
+{
+	"name": "@brianhung/editor-text-color",
+	"description": "text extension",
+	"version": "0.0.0",
+	"homepage": "https://github.com/brianhung/editor/blob/main/packages/text-color",
+	"keywords": [
+		"prosemirror",
+		"rich text editor"
+	],
+	"license": "MIT",
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"src",
+		"dist"
+	],
+	"devDependencies": {
+		"@brianhung/editor": "^0.0.0",
+		"@brianhung/editor-text-style": "^0.0.0"
+	},
+	"peerDependencies": {
+		"@brianhung/editor": "^0.0.0",
+		"@brianhung/editor-text-style": "^0.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brianhung/editor",
+		"directory": "packages/text-color"
+	},
+	"scripts": {
+		"clean": "rm -rf dist",
+		"build": "npm run clean && rollup -c ../../rollup.config.js"
+	}
+}
