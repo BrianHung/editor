@@ -1,0 +1,287 @@
+.ProseMirror {
+	height: fit-content;
+	outline: none;
+	line-height: 1.25;
+	margin: auto;
+}
+
+.ProseMirror > * {
+	width: 760px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ProseMirror > img {
+	display: block;
+	margin: 2rem auto;
+}
+
+.editor-content {
+	width: 100%;
+}
+
+.ProseMirror .mathblock {
+	background-color: theme('colors.gray.100');
+}
+
+.ProseMirror .katex-render .katex-display {
+	user-select: none;
+}
+
+.ProseMirror .katex-editor {
+	padding-bottom: 0;
+	margin: 0;
+}
+
+.ProseMirror blockquote {
+	margin: 1em 0;
+	padding: 0.1rem 0;
+	padding-left: 1rem;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+/* Override default selected node styling: https://github.com/ProseMirror/prosemirror-view/blob/master/style/prosemirror.css */
+
+.ProseMirror-selectednode {
+	background: #bae6fdbf; /* colors.sky.200 75 opacity */
+}
+
+li.ProseMirror-selectednode:after {
+	border: none !important;
+}
+
+li.todo-item.ProseMirror-selectednode:after {
+	inset: 0 !important;
+}
+
+*::selection {
+	background: #bae6fdbf; /* colors.sky.200 75 opacity */
+}
+
+.ProseMirror .codeblock::before,
+.ProseMirror .mathblock::before {
+	content: attr(data-language);
+}
+
+.ProseMirror .codeblock::before,
+.ProseMirror .mathblock::before,
+.ProseMirror .CodeMirror::before {
+	color: theme('colors.gray.500');
+	display: block;
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+.ProseMirror .codeblock code,
+.ProseMirror .mathblock code {
+	display: block;
+	padding: 4px 0;
+}
+
+.ProseMirror .codeblock,
+.ProseMirror .mathblock {
+	font-family:
+		SFMono-Regular,
+		Consolas,
+		Liberation Mono,
+		Menlo,
+		monospace;
+	background-color: theme('colors.gray.100');
+	margin: 1rem auto;
+	padding: 16px;
+	overflow: auto;
+	font-size: 0.85em;
+	line-height: 1.45;
+}
+
+.ProseMirror .CodeMirror {
+	background-color: theme('colors.gray.100');
+	margin: 1rem 0;
+	position: relative;
+}
+
+.ProseMirror .CodeMirror::before {
+	content: attr(data-language);
+	transform: translateY(100%);
+	padding: 0 16px;
+}
+
+.ProseMirror figure {
+	width: 100%;
+	margin: 0;
+}
+
+.ProseMirror > img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ProseMirror a.tag {
+	border-radius: 0.25rem;
+	padding: 0.2em 0.4em;
+	background-color: rgba(186, 230, 253, 0.5);
+	color: #06c;
+	text-decoration: none;
+}
+
+.ProseMirror a.tag:hover {
+	text-decoration: underline;
+}
+
+.ProseMirror p code {
+	border-radius: 0.25rem;
+	padding: 0.2em 0.4em;
+	background-color: theme('colors.gray.100');
+	font-size: 0.85rem;
+	line-height: 1;
+}
+
+.ProseMirror a {
+	color: #06c;
+	text-decoration: underline 1px #06c;
+	text-underline-offset: 2px;
+}
+
+.ProseMirror a:visited {
+	color: #06c;
+}
+
+.ProseMirror-image-toolbar {
+	position: absolute;
+	z-index: 10;
+	width: fit-content;
+	left: 0px;
+	right: 0px;
+	margin: auto; /* horizontally center toolbar */
+	transform: translateY(50%);
+}
+
+.ProseMirror a.embed {
+	display: block;
+	background-color: rgb(246, 248, 250);
+	margin: 1rem auto;
+	padding: 16px;
+	overflow: auto;
+	font-size: 0.85em;
+	line-height: 1.45;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.ProseMirror a.embed:before {
+	content: '↗';
+	margin-right: 0.5rem;
+}
+
+.ProseMirror a.embed.ProseMirror-selectednode {
+	background-color: rgba(136, 204, 255, 0.25);
+}
+
+.ProseMirror .mathblock {
+	display: flex;
+	flex-direction: column;
+}
+
+.ProseMirror .mathblock .katex-render {
+	cursor: pointer;
+}
+
+.ProseMirror .mathblock .katex-render .katex-error {
+	display: block;
+	padding-top: 1rem;
+	color: theme('colors.red.500');
+}
+
+.ProseMirror-dropcursor {
+	transition:
+		top 75ms ease-in,
+		bottom 75ms ease-in;
+}
+
+.ProseMirror .ProseMirror-image-nodeview {
+	position: relative;
+}
+
+.ProseMirror .ProseMirror-image-nodeview > button:first-child {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	width: 2.25rem;
+	height: 2.25rem;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 0;
+	background-color: rgb(000, 000, 000, 0.375);
+}
+
+.ProseMirror .ProseMirror-image-nodeview .ProseMirror-image-toolbar {
+	bottom: 0;
+}
+
+.ProseMirror table {
+	border-radius: 3px;
+}
+
+.ProseMirror table td,
+.ProseMirror table th {
+	border: 1px solid #e5e5e5;
+}
+
+.ProseMirror table td.ProseMirror-selectedcell {
+	background-color: theme('colors.sky.200 / 25');
+}
+
+.ProseMirror table tbody,
+.ProseMirror table tbody tr {
+	border-radius: 3px;
+}
+
+.ProseMirror table p {
+	margin: 0;
+}
+
+.ProseMirror h1 {
+	font-size: 2.5em;
+}
+
+.ProseMirror h2 {
+	font-size: 2.25em;
+}
+
+.ProseMirror h3 {
+	font-size: 2em;
+}
+
+.ProseMirror h4 {
+	font-size: 1.75em;
+}
+
+.ProseMirror h5 {
+	font-size: 1.5em;
+}
+
+.ProseMirror h6 {
+	font-size: 1.25em;
+}
+
+.ProseMirror mark {
+	color: inherit;
+}
+
+.ProseMirror ul.todo-list li.todo-item {
+	margin: 0.5em 0;
+}
+
+.ProseMirror ul.item-list {
+	list-style: disc;
+}
+
+.ProseMirror .enum-list {
+	list-style: decimal;
+}
+
+.ProseMirror .ProseMirror-autocomplete {
+	color: theme('colors.gray.500');
+}

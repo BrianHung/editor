@@ -1,0 +1,63 @@
+{
+	"name": "editor",
+	"version": "0.0.0",
+	"description": "a rich text editor built upon ProseMirror",
+	"license": "MIT",
+	"author": {
+		"name": "Brian Hung",
+		"email": "brianlhung@gmail.com"
+	},
+	"private": true,
+	"sideEffects": [
+		"*.css"
+	],
+	"workspaces": [
+		"demo",
+		"packages/*"
+	],
+	"scripts": {
+		"build": "turbo run build",
+		"build:packages": "turbo run build --filter='./packages/*'",
+		"build:demo": "turbo run build --filter=@brianhung/editor-demo",
+		"test": "turbo run test",
+		"lint": "turbo run lint",
+		"dev": "turbo run dev",
+		"start": "npm run start -w @brianhung/editor-demo",
+		"publish:packages": "turbo run build && changeset version && changeset publish",
+		"format": "prettier --write --cache \"**/*.{ts,tsx,js,jsx,json}\""
+	},
+	"dependencies": {
+		"@atomico/rollup-plugin-sizes": "^1.1.4",
+		"@changesets/cli": "^2.27.1",
+		"@rollup/plugin-babel": "^6.0.4",
+		"@rollup/plugin-commonjs": "^25.0.7",
+		"prosemirror-commands": "^1.5.2",
+		"prosemirror-dropcursor": "^1.5.0",
+		"prosemirror-gapcursor": "^1.3.1",
+		"prosemirror-history": "^1.3.0",
+		"prosemirror-inputrules": "^1.2.0",
+		"prosemirror-keymap": "^1.2.0",
+		"prosemirror-markdown": "^1.13.0",
+		"prosemirror-model": "^1.18.0",
+		"prosemirror-schema-list": "^1.2.0",
+		"prosemirror-state": "^1.4.0",
+		"prosemirror-transform": "^1.6.0",
+		"prosemirror-view": "^1.26.0",
+		"rollup-plugin-auto-external": "^2.0.0",
+		"rollup-plugin-sourcemaps": "^0.6.3",
+		"rollup-plugin-typescript2": "^0.36.0"
+	},
+	"devDependencies": {
+		"@brianhung/editor-demo": "^0.0.0",
+		"@rollup/plugin-node-resolve": "^13.3.0",
+		"copyfiles": "^2.4.1",
+		"gulp": "^4.0.2",
+		"gulp-svg-sprite": "^1.5.0",
+		"prettier-plugin-organize-imports": "^3.2.4",
+		"prettier-plugin-tailwindcss": "^0.5.11",
+		"turbo": "^1.2.16",
+		"typescript": "^4.7.3",
+		"vite-plugin-svgr": "^4.2.0"
+	},
+	"packageManager": "npm@8.6.0"
+}

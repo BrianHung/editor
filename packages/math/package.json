@@ -1,0 +1,37 @@
+{
+	"name": "@brianhung/editor-math",
+	"description": "math extension",
+	"version": "0.0.0",
+	"homepage": "https://github.com/brianhung/editor/blob/main/packages/math",
+	"keywords": [
+		"prosemirror",
+		"rich text editor"
+	],
+	"license": "MIT",
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"style": "style/math.css",
+	"files": [
+		"src",
+		"dist"
+	],
+	"dependencies": {
+		"katex": "^0.16.0"
+	},
+	"devDependencies": {
+		"@brianhung/editor": "^0.0.0"
+	},
+	"peerDependencies": {
+		"@brianhung/editor": "^0.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brianhung/editor",
+		"directory": "packages/core"
+	},
+	"scripts": {
+		"clean": "rm -rf dist",
+		"build": "npm run clean && rollup -c ../../rollup.config.js"
+	}
+}
